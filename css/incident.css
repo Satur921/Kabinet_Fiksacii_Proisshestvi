@@ -1,0 +1,257 @@
+/* incident.css */
+.incident-section div h1 { 
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 800;
+}
+
+.incident-area_incident-section {
+    padding: 25px 25px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffda;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.container-header-table { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container-filter-search {
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-search {
+    margin-left: 10px;
+}
+
+.desktop-table {
+    display: table;
+    width: 100%;
+}
+
+.mobile-table {
+    display: none;
+}
+
+.mobile-table-item {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.mobile-table-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mobile-table-item .mobile-table-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+}
+
+.mobile-table-divider {
+    height: 1px;
+    background-color: #dee2e6;
+    margin: 0;
+}
+
+.mobile-table-content {
+    display: flex;
+    padding: 15px;
+}
+
+.content-description {
+    flex: 1;
+}
+
+.content-status {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-row {
+    margin-bottom: 0px;
+}
+
+.info-row {
+    margin-bottom: 0px;
+}
+
+.mobile-table-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.status-active {
+    color: #ffc107;
+    font-weight: 700;
+}
+
+.status-completed {
+    color: #198754;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .desktop-table {
+        display: none !important;
+    }
+    
+    .mobile-table {
+        display: block !important;
+    }
+
+    .container-header-table {
+        flex-direction: column !important;
+    }
+    .container-btn {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    #create-button {
+        width: 100%;
+        height: 40px;
+    }
+    .container-filter-search {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    #type-filter {
+        width: 100%;
+        flex: 1;
+    }
+    .container-search {
+        width: 100%;
+        height: 40px;
+        margin-left: 0px;
+    }
+    #description-search {
+        width: 100%;
+    }
+}
+
+#description-search {
+    padding: 3px 10px;
+    height: 28px;
+}
+
+.filter-label { 
+    font-size: clamp(14px, 5vw, 18px);
+    white-space: nowrap;
+}
+
+#create-button { 
+    color: white;
+    background-color: #cd3e3e;
+    border: none;
+    border-radius: 2px;
+    padding: 3px 10px;
+}
+#create-button:hover {
+    background-color: #b73a3a;
+}
+#type-filter {
+    height: 28px;
+}
+.tr {
+    border-top: solid 1px rgb(206, 206, 206);
+    border-bottom: solid 1px rgb(206, 206, 206);
+}
+.tr th {
+    padding-top: 5px;
+    font-size: clamp(18px, 5vw, 22px);
+}
+tbody td {
+    font-size: clamp(14px, 5vw, 18px);
+}
+#incidents-table {
+    width: 100%;
+}
+#incidents-table tbody tr {
+    cursor: pointer;
+}
+#incidents-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.modal-header h5 {
+    font-size: clamp(18px, 5vw, 22px);
+}
+.modal-body {
+    font-size: clamp(14px, 5vw, 18px);
+}
+.modal-body p {
+    margin-bottom: 0.5rem;
+}
+.modal-body strong {
+    font-weight: bold;
+}
+
+.edit-incident-btn {
+    background-color: #cd3e3e;
+    border: none;
+    color: white;
+}
+
+.edit-incident-btn:hover {
+    background-color: #b73a3a;
+}
+
+.delete-incident-btn {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+.delete-incident-btn:hover {
+    background-color: #5a6268;
+}
+
+.edit-mode .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-mode label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-mode .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.edit-mode textarea.form-control {
+    resize: vertical;
+}
+
+.save-incident-btn {
+    background-color: #198754;
+    border: none;
+    color: white;
+}
+
+.save-incident-btn:hover {
+    background-color: #157347;
+}
+

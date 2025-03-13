@@ -1,0 +1,45 @@
+.text-area_hello-section h1{
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 800;
+}
+.text-area_hello-section h2 {
+    font-size: clamp(22px, 5vw, 32px);
+    font-weight: 500;
+    color: #4d4d4d;
+}
+.incidents-area_hello-section { 
+    padding: 25px 25px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffda;
+    margin-top: clamp(50px, 5vw, 150px);
+}
+.incidents-area_hello-section h3{ 
+    font-size: clamp(18px, 5vw, 28px);
+    font-weight: 400;
+}
+.statistic-incident ul li{
+    font-size: 18px;
+    font-weight: 400;
+}
+.card-incident {
+    margin: 0 auto;
+    padding: 15px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px #4d4d4d; 
+    width: 200px;
+    height: 200px;
+}
+.card-incident div b{
+    font-size: 20px;
+    font-weight: 400;
+}
+.card-incident_info-section{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.row div { 
+    margin-bottom: 12px;
+}
